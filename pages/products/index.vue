@@ -58,7 +58,6 @@
         padding-bottom: 5rem;
         .swiper-slide {
         height:400px;
-        margin-left: 20px;
           }
     
     }

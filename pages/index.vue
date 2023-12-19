@@ -60,6 +60,7 @@ const breakpoints={
  .sec1{
   width: 100vw;
   height: 100vh;
+  overflow: hidden;
   text-align: center;
   position: relative;
    h1{
@@ -105,10 +106,15 @@ const breakpoints={
   background: transparent;
   width: 100%;
   height: 50%;
-  img{
-    width: 200px;
-    height: 200px;
+  .swiper-slide{
+     display: flex;
+     justify-content: center;
+     img{
+      width:200px;
+      height: 200px;
+     }
   }
+  
 
  }
 }
