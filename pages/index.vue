@@ -59,7 +59,9 @@ const breakpoints={
   height: 100svh;
  .sec1{
   width: 100vw;
+  height: 100vh;
   text-align: center;
+  position: relative;
    h1{
     font-size: 100px;
    }
@@ -68,6 +70,30 @@ const breakpoints={
     font-size: 50px;
    }
    }
+ }
+ .sec1::before{
+  content: '';
+  position: absolute;
+  top:0;
+  left:0;
+  height: 100%;
+  width: 50%;
+  background-color:cyan;
+  transform: skew(50deg) translateY(-50%);
+  z-index: -1;
+
+ }
+ .sec1::after{
+  content: '';
+  position: absolute;
+  top:0;
+  right:0;
+  height: 100%;
+  width: 50%;
+  background-color: cyan;
+  transform: skew(-50deg)  translateY(-50%);
+  z-index: -1;
+
  }
  .sec2{
   position: absolute;
